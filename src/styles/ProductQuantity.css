@@ -1,0 +1,35 @@
+
+.product-quantity {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.quantity-label {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-button {
+  background-color: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quantity-button:hover {
+  background-color: #2c5282;
+}
+
+.quantity-display {
+  margin: 0 1rem;
+  font-size: 1.25rem;
+}

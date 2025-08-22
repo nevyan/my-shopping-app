@@ -1,0 +1,136 @@
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.product-detail-content {
+  max-width: 1100px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0; 
+  padding: 30px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.detail-image-column {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.detail-product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.detail-info-column {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-product-name, .detail-brand, .detail-price, .detail-description {
+  margin: 0;
+}
+
+.detail-product-name {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.detail-brand {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.detail-price {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.detail-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.detail-options-container {
+  margin-bottom: 25px;
+}
+.detail-option-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+.detail-option-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+
+
+  background-color: transparent;
+    color: gray;
+}
+
+.detail-add-to-cart-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.detail-add-to-cart-btn:hover:not(:disabled) {
+  background-color: #333;
+}
+.detail-add-to-cart-btn:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.detail-stock-info {
+  margin-top: 20px;
+}
+.detail-available-qty {
+  font-size: 0.9rem;
+  color: green; 
+  font-weight: bold;
+}
+
+
+.detail-out-of-stock {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+@media (max-width: 800px) {
+  .product-detail-content {
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 20px;
+  }
+  
+  .detail-image-column,
+  .detail-info-column {
+    flex: 1 1 100%;
+  }
+}

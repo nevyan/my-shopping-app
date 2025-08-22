@@ -1,0 +1,27 @@
+.cart-bag-img {
+    width: 42px;
+    height: 42px;
+
+}
+
+.cart-count {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13px;
+    height: 13px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}

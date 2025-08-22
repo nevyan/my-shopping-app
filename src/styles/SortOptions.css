@@ -1,0 +1,57 @@
+.sort-dropdown {
+  position: relative;
+  width: 200px; 
+}
+
+.sort-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: transparent;
+  color:var(--secondary-text);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.sort-button .arrow {
+  transition: transform 0.2s ease-in-out;
+}
+
+.sort-button .arrow.open {
+  transform: rotate(180deg);
+}
+
+.sort-options-list {
+  position: absolute;
+  top: 105%; 
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  z-index: 100;
+}
+
+.sort-option {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.sort-option:hover {
+  background-color: #f7fafc; 
+}
+
+.sort-option.active {
+  color: #ef4444; 
+  font-weight: 600;
+}
